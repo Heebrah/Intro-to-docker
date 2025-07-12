@@ -474,14 +474,31 @@ docker image
 ```
 ![caption](/img/12.docker-images.jpg)
 
-13. After creating the image if you run it it will show its working by giving you the hello-world message ![caption](/img/13.docker-shows-image-exist.jpg)
+13. After creating the image if you run it it will show its working by giving you the hello-world message
+```
+docker run hello-world
+```
+
+![caption](/img/13.docker-shows-image-exist.jpg)
 
 
-14. To check for a running container ![caption](/img/14.docker-ps.jpg)
+14. To check for a running container
+```
+docker ps
+```
+![caption](/img/14.docker-ps.jpg)
 
-15. Check the container that's not running ![caption](/img/15.docker-ps-a.jpg)
+15. Check the container that's not running 
+```
+docker ps -a
+```
+![caption](/img/15.docker-ps-a.jpg)
 
-16. The docker pull ubuntu command is used to download a Docker image from a registry (by default, Docker Hub) to your local system. 
+16. The docker pull ubuntu command is used to download a Docker image from a registry (by default, Docker Hub) to your local system.
+```
+docker pull ubuntu
+```
+
 ![caption](/img/16.docker-pull-ubuntu.jpg)
 
 17. To delete an image we specify the image id
@@ -491,6 +508,12 @@ docker rm $image-id
 ![caption](/img/23.docker-rmi.jpg)
 
 18. Creating an nginx server to a port 80(http)
+```
+docker run -d -p 8080:80 nginx
+```
+
+
+
 ![caption](/img/'25.run-ngnix-as-container.jpg)
 
 The command and output in the image relate to running a Docker container with a custom port mapping. Here's a detailed explanation:
